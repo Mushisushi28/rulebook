@@ -1,0 +1,42 @@
+---
+name: "Mastermind"
+slug: "mastermind"
+players: "2"
+time: "15–30 min"
+age: "8+"
+complexity: "Light"
+summary: "One player creates a secret code of colored pegs; the other has ten tries to crack it, guided by black and white response pegs after each guess."
+---
+
+## Setup
+
+One player is the **Codemaker** and the other is the **Codebreaker**. The Codemaker secretly places 4 colored pegs in the code slots behind the shield at one end of the board. Six colors are available; pegs may repeat or be omitted. The Codebreaker has 10 rows of 4 holes to make guesses.
+
+---
+
+## How to Play
+
+The Codebreaker places 4 pegs in the first guess row, choosing any colors and any arrangement. The Codemaker responds by placing response pegs in the small holes:
+
+- **Black peg:** One peg is the correct color in the correct position.
+- **White peg:** One peg is the correct color but in the wrong position.
+- Response pegs do **not** indicate which specific peg was correct — only the count.
+
+The Codebreaker uses the feedback to refine each subsequent guess, row by row, until the code is cracked or all 10 rows are exhausted.
+
+---
+
+## Winning
+
+- **Codebreaker wins** by guessing the exact code (4 black pegs) within 10 guesses.
+- **Codemaker wins** if the Codebreaker fails all 10 guesses.
+
+In multi-round play, players switch roles and keep score based on how many guesses were needed (or awarding points for failures). The player with the lower total score after equal rounds wins.
+
+---
+
+## Tips
+
+- Donald Knuth proved that any code can be broken in 5 guesses using a minimax strategy.
+- Start with two colors of two pegs each (e.g., RRBB) to gather maximum information.
+- Eliminate possibilities systematically rather than guessing randomly.
