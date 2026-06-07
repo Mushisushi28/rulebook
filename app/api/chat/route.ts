@@ -17,7 +17,7 @@ ${gameRules}
 ---`;
 
   const payload = {
-    model: 'gpt-4o',
+    model: 'llama-3.3-70b-versatile',
     messages: [
       { role: 'system', content: systemPrompt },
       ...messages,
