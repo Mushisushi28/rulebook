@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #0e0d0b;
+  --bg-raised: #1a1815;
+  --ink: #ece6da;
+  --ink-dim: #9a9387;
+  --accent: #c8a24c;
+  --accent-dim: #6b5a2e;
+  --rule: #2a2722;
+  --highlight: rgba(200, 162, 76, 0.16);
+  --highlight-hover: rgba(200, 162, 76, 0.32);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 300;
+  line-height: 1.7;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(200, 162, 76, 0.03) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 10%, rgba(200, 162, 76, 0.02) 0%, transparent 50%);
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+::selection {
+  background: var(--highlight-hover);
+}
+
+/* Prose / rulebook content */
+.prose {
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  color: var(--ink);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.prose h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.prose ul, .prose ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+.prose strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.prose em {
+  color: var(--ink-dim);
+  font-style: italic;
+}
+
+.prose blockquote {
+  border-left: 2px solid var(--accent-dim);
+  padding-left: 1rem;
+  color: var(--ink-dim);
+  font-style: italic;
+  margin: 1.25rem 0;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 1.5rem 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rule);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dim);
+}
