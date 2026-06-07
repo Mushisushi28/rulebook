@@ -1,0 +1,51 @@
+---
+name: "Hive"
+slug: "hive"
+players: "2"
+time: "20 min"
+age: "9+"
+complexity: "Medium"
+summary: "A tile-based abstract strategy game with no board. Surround your opponent Queen Bee while defending your own. Each piece type moves differently; the Hive must never be split."
+---
+
+## Setup
+
+Each player takes 11 pieces: 1 Queen Bee, 2 Beetles, 2 Grasshoppers, 3 Ants, 2 Spiders. White places first. There is no board -- pieces are placed directly on the table. The playing area expands as pieces are added.
+
+---
+
+## Placement Rules
+
+On your turn, either place a new piece or move an existing piece.
+
+**Placing:** A newly placed piece must touch only your own pieces (except for the very first placement of each color, which establishes the Hive). You may not place a piece touching an opponent piece unless it is the opening move.
+
+**Queen Bee Rule:** You must place your Queen Bee by your 4th turn. You cannot move any pieces until your Queen Bee is in play.
+
+---
+
+## Movement
+
+Each piece type has a unique movement:
+
+**Queen Bee:** Slides 1 space around the Hive.
+**Beetle:** Moves 1 space; can climb on top of other pieces (blocking their movement and controlling their color).
+**Grasshopper:** Jumps in a straight line over any number of adjacent pieces, landing on the first empty space.
+**Ant:** Slides to any space on the outside of the Hive.
+**Spider:** Slides exactly 3 spaces around the Hive (no backtracking).
+
+**Freedom of movement:** A piece can slide only if it is not wedged in (both neighbors must not be blocking the slide). **One Hive rule:** A piece may not move if removing it would split the Hive into two disconnected groups.
+
+---
+
+## Winning
+
+The player whose Queen Bee is surrounded on all 6 sides loses. If both Queens are surrounded simultaneously, the game is a draw.
+
+---
+
+## Tips
+
+- Ants are the most powerful pieces; deploy them early to threaten the opponent Queen.
+- Beetles can immobilize key opponent pieces by climbing on them.
+- Never move a piece that is the only link connecting two parts of the Hive.
